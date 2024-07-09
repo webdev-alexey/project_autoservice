@@ -1,0 +1,165 @@
+.contact {
+  padding: 104px 0 120px;
+  color: #222;
+}
+
+.contact__title {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.contact__title-text_red {
+  color: #d10014;
+}
+
+.form {
+  padding: 60px;
+  background-color: #fff;
+  border-radius: 32px;
+}
+
+.form__fieldset {
+  margin-bottom: 32px;
+}
+
+.form__title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.form__radio-wrapper {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.form__radio-wrapper:last-child {
+  margin-bottom: 0;
+}
+
+.radio__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio__label {
+  cursor: pointer;
+  display: block;
+  padding: 12px 20px;
+  border-radius: 50px;
+  background-color: #f0f4f4;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  border: 1px solid transparent;
+}
+
+.radio__label:hover {
+  background-color: #e4f0f0;
+}
+
+.radio__input:focus-visible + .radio__label {
+  border-color: #d10014;
+}
+
+.radio__input:checked + .radio__label {
+  background-color: #222;
+  color: #fff;
+}
+
+.form__months {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 16px;
+}
+
+.form__btn-month {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.form__btn-month_active {
+  color: #d10014;
+  transform: scale(1.15);
+}
+
+.form__subtitle {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.form__input-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 8px;
+  margin-bottom: 32px;
+}
+
+.form__input {
+  padding: 12px 20px;
+  border-radius: 8px;
+  background-color: #f0f4f4;
+  border: 1px solid transparent;
+  color: inherit;
+}
+
+.form__input:hover {
+  background-color: #f0f4f4;
+}
+
+.form__input:focus-visible {
+  border-color: #d0d0d0;
+}
+
+.form__info {
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.form__btn-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.form__btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 140%;
+  border-radius: 50px;
+  background-color: #f0f4f4;
+}
+
+.form__btn_next {
+  background-color: #d10014;
+  color: #fff;
+}
+
+.form__btn_submit {
+  background-color: #d10014;
+  color: #fff;
+}
+
+.form__btn:disabled {
+  color: #222;
+  background-color: #f0f4f4;
+  opacity: 0.4;
+  pointer-events: none;
+}
