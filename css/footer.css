@@ -16,7 +16,7 @@
 
 .footer__logo {
   width: 100%;
-  max-width: 480px;
+  max-width: 460px;
   grid-area: logo;
 }
 
@@ -40,4 +40,31 @@
 
 .footer__developer-link:hover {
   color: #d10014;
+}
+
+@media (max-width: 660px) {
+  .footer {
+    padding: 24px 0 20px;
+  }
+
+  .footer__container {
+    gap: 0;
+    grid-template-areas:
+      "logo"
+      "copyright"
+      "developers";
+  }
+
+  .footer__logo {
+    max-width: 230px;
+    margin-bottom: 32px;
+  }
+
+  .footer__copyright {
+    margin-bottom: 16px;
+  }
+
+  .footer__developers {
+    justify-self: start;
+  }
 }

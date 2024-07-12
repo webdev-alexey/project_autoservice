@@ -163,3 +163,50 @@
   opacity: 0.4;
   pointer-events: none;
 }
+
+@media (max-width: 1080px) {
+  .contact {
+    padding-top: 60px;
+  }
+
+  .contact__title {
+    font-size: 60px;
+  }
+
+  .form {
+    padding: 40px;
+  }
+
+  .form__title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .contact {
+    padding: 50px 0 100px;
+  }
+
+  .contact__title {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 660px) {
+  .contact {
+    padding: 50px 0 80px;
+  }
+
+  .contact__title {
+    font-size: 32px;
+  }
+
+  .form {
+    padding: 24px 16px;
+    border-radius: 16px;
+  }
+
+  .form__input-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
