@@ -8,7 +8,7 @@
     </title>
     <link rel="icon" href="img/favicon.svg" />
     <link rel="stylesheet" href="css/index.css" />
-    <script src="js/index.js" defer></script>
+    <script src="js/index.js" type="module"></script>
   </head>
   <body>
     <header class="header">
@@ -74,130 +74,15 @@
           </h2>
 
           <form class="contact__form form">
-            <fieldset class="form__fieldset form__fieldset_active">
+            <fieldset
+              class="form__fieldset form__fieldset_active form__fieldset_type"
+            >
               <legend class="form__title">Выберите нужное направление</legend>
 
-              <div class="form__radio-wrapper">
-                <div class="radio">
-                  <input
-                    class="radio__input"
-                    type="radio"
-                    name="type"
-                    value="bodyRepair"
-                    id="bodyRepair"
-                  />
-                  <label class="radio__label" for="bodyRepair">
-                    Кузовной ремонт
-                  </label>
-                </div>
-
-                <div class="radio">
-                  <input
-                    class="radio__input"
-                    type="radio"
-                    name="type"
-                    value="engineDiagnosisRepair"
-                    id="engineDiagnosisRepair"
-                  />
-                  <label class="radio__label" for="engineDiagnosisRepair">
-                    Диагностика и&nbsp;ремонт двигателей
-                  </label>
-                </div>
-
-                <div class="radio">
-                  <input
-                    class="radio__input"
-                    type="radio"
-                    name="type"
-                    value="electricalDiagnosis"
-                    id="electricalDiagnosis"
-                  />
-                  <label class="radio__label" for="electricalDiagnosis">
-                    Электрика и&nbsp;электроника
-                  </label>
-                </div>
-
-                <div class="radio">
-                  <input
-                    class="radio__input"
-                    type="radio"
-                    name="type"
-                    value="brakeSystems"
-                    id="brakeSystems"
-                  />
-                  <label class="radio__label" for="brakeSystems">
-                    Тормозные системы и&nbsp;ходовая часть
-                  </label>
-                </div>
-
-                <div class="radio">
-                  <input
-                    class="radio__input"
-                    type="radio"
-                    name="type"
-                    value="wendingWorks"
-                    id="wendingWorks"
-                  />
-                  <label class="radio__label" for="wendingWorks">
-                    Сварочные работы
-                  </label>
-                </div>
-
-                <div class="radio">
-                  <input
-                    class="radio__input"
-                    type="radio"
-                    name="type"
-                    value="acRepair"
-                    id="acRepair"
-                  />
-                  <label class="radio__label" for="acRepair">
-                    Ремонт и обслуживание системы кондиционирования
-                  </label>
-                </div>
-
-                <div class="radio">
-                  <input
-                    class="radio__input"
-                    type="radio"
-                    name="type"
-                    value="oilChange"
-                    id="oilChange"
-                  />
-                  <label class="radio__label" for="oilChange">
-                    Замена масел и&nbsp;техническое обслуживание
-                  </label>
-                </div>
-
-                <div class="radio">
-                  <input
-                    class="radio__input"
-                    type="radio"
-                    name="type"
-                    value="transmissionRepair"
-                    id="transmissionRepair"
-                  />
-                  <label class="radio__label" for="transmissionRepair">
-                    Ремонт трансмиссии и&nbsp;коробки передач
-                  </label>
-                </div>
-
-                <div class="radio">
-                  <input
-                    class="radio__input"
-                    type="radio"
-                    name="type"
-                    value="tireFitting"
-                    id="tireFitting"
-                  />
-                  <label class="radio__label" for="tireFitting">
-                    Шиномонтаж и&nbsp;балансировка
-                  </label>
-                </div>
-              </div>
+              <div class="form__radio-wrapper form__radio-wrapper_type"></div>
             </fieldset>
 
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset_date">
               <legend class="form__title">Выберите дату и&nbsp;время</legend>
 
               <div class="form__months">
@@ -211,7 +96,7 @@
                 <button class="form__btn-month" type="button">Апрель</button>
               </div>
 
-              <div class="form__radio-wrapper">
+              <div class="form__radio-wrapper form__radio-wrapper_day">
                 <div class="radio">
                   <input
                     class="radio__input"
@@ -316,7 +201,7 @@
               <div class="form__time">
                 <p class="form__subtitle">Доступное время:</p>
 
-                <div class="form__radio-wrapper">
+                <div class="form__radio-wrapper form__radio-wrapper_time">
                   <div class="radio">
                     <input
                       class="radio__input"
@@ -368,7 +253,7 @@
               </div>
             </fieldset>
 
-            <fieldset class="form__fieldset">
+            <fieldset class="form__fieldset form__fieldset_client">
               <legend class="form__title">Заполните поля</legend>
 
               <div class="form__input-wrapper">
@@ -398,7 +283,9 @@
                 />
               </div>
 
-              <p class="form__info">Диагностика и&nbsp;ремонт двигателей</p>
+              <p class="form__info form__info_type">
+                Диагностика и&nbsp;ремонт двигателей
+              </p>
               <p class="form__info">
                 <time class="form__info-data" datetime="2024-03-02T14:00">
                   <span class="form__info-data-day">03.02</span>
